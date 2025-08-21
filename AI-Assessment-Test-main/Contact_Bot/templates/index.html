@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Contact Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='bot-logo.png') }}" alt="Bot Logo" />
+            <h1>AI Contact Chatbot</h1>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="bot-msg">Hello! I’m your assistant. How can I help you today?</div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..." />
+            <button type="button" onclick="sendMessage()">Send</button>
+            <button type="button" onclick="startVoice()" class="mic">🎤</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

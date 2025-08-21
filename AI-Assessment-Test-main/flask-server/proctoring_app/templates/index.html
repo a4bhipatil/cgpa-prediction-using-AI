@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proctoring System</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+        img {
+            margin-top: 20px;
+            border: 2px solid #000;
+            width: 80%;
+            max-width: 720px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Proctoring System</h2>
+    <img src="{{ url_for('video_feed') }}" alt="Live Camera Feed">
+</body>
+</html>

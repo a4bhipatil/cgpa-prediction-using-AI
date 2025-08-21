@@ -1,0 +1,41 @@
+.floating-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #00bfff, #007bff);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0,123,255,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    animation: pulse 2s infinite;
+    z-index: 1000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .floating-chat-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0,123,255,0.8);
+  }
+  
+  .floating-chat-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 15px rgba(0,123,255,0.6);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(0,123,255,0.9);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(0,123,255,0.6);
+    }
+  }
+  

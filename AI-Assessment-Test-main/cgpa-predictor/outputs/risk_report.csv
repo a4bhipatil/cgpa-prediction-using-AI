@@ -1,0 +1,4 @@
+student_id,semesters,latest_cgpa,trend_slope_per_sem,flags,at_risk
+S001,2,7.1,0.2,,No
+S002,1,6.6,0.0,Low engagement (attendance<75 & study hours<8),Yes
+S003,1,8.3,0.0,,No

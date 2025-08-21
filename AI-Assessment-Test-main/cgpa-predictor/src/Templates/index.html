@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPA Predictor</title>
+</head>
+<body>
+    <h1>CGPA Prediction System</h1>
+
+    <form method="post" action="/predict">
+        <button type="submit">Run CGPA Prediction</button>
+    </form>
+
+    <form method="post" action="/analyze">
+        <button type="submit">Run Trend Analysis</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction Output</h2>
+        <pre>{{ prediction }}</pre>
+    {% endif %}
+
+    {% if analysis %}
+        <h2>Analysis Output</h2>
+        <pre>{{ analysis }}</pre>
+    {% endif %}
+
+    {% if errors %}
+        <h2>Errors</h2>
+        <pre style="color:red">{{ errors }}</pre>
+    {% endif %}
+</body>
+</html>
